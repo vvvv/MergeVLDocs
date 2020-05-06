@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.0" />
+  <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
+    <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="Application" CanvasType="FullCategory">
+      <!--
+
+    ************************ GetProgramFilesFolder ************************
+
+-->
+      <Node Name="GetProgramFilesFolder" Bounds="457,380,228,171" Id="EuWG7kw4uQpLUlPYimENlM">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="VJWKInoPP5RQX2NFesiiQm">
+          <Node Bounds="471,441,80,19" Id="SH0y0wx0YWnOphuZbkRY8A">
+            <p:NodeReference LastCategoryFullName="System.Environment" LastSymbolSource="mscorlib.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetFolderPath" />
+            </p:NodeReference>
+            <Pin Id="MgLJhLwYgdkLHIGkp38AkX" Name="Folder" Kind="InputPin" />
+            <Pin Id="V7VC36hxbw0OMAkdSE4684" Name="Result" Kind="OutputPin" />
+          </Node>
+          <ControlPoint Id="TSliUIk8216MIiYMyWYGhL" Bounds="473,534" />
+          <Pin Id="H4exsh92mJBNt0ennW0Hah" Name="Result" Kind="OutputPin" Bounds="616,451" />
+          <Link Id="VMzoXYouFWUNCjtaJQrGpj" Ids="TSliUIk8216MIiYMyWYGhL,H4exsh92mJBNt0ennW0Hah" IsHidden="true" />
+          <Pad Id="A6WPlwg6QIjNzgbqKdCmoC" Comment="Folder" Bounds="473,408,149,15" ShowValueBox="true" isIOBox="true" Value="ProgramFiles">
+            <p:TypeAnnotation LastCategoryFullName="System.Environment" LastSymbolSource="mscorlib.dll">
+              <Choice Kind="TypeFlag" Name="SpecialFolder" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Link Id="HLVUu1G3NjZM0YRQP6rGPt" Ids="A6WPlwg6QIjNzgbqKdCmoC,MgLJhLwYgdkLHIGkp38AkX" />
+          <Node Bounds="471,483,48,19" Id="UWQYU8e054TLwZwefRYaUV">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="ToPath" />
+            </p:NodeReference>
+            <Pin Id="RBxQpD5ZwUGPP4iLSUT2EQ" Name="Input" Kind="InputPin" />
+            <Pin Id="RvIeMBQ73OFMC9t8Tzlcbb" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Link Id="T1RbMI6ilbVMjx3d0dB0Ve" Ids="V7VC36hxbw0OMAkdSE4684,RBxQpD5ZwUGPP4iLSUT2EQ" />
+          <Link Id="NS6TDHRoEhRO41cNBIfDxM" Ids="RvIeMBQ73OFMC9t8Tzlcbb,TSliUIk8216MIiYMyWYGhL" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ Exit ************************
+
+-->
+      <Node Name="Exit" Bounds="514,658,100,50" Id="LkiOgCd3QuQMJJwNDtl3Ye">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="JZwjnriWyyZOrYltZCyLMP">
+          <Node Bounds="514,658,10,10" AutoConnect="true" Id="CQblioSdClSONtjZ7CWdYl">
+            <p:NodeReference LastCategoryFullName="System.Windows.Forms.Application" LastSymbolSource="System.Windows.Forms.dll">
+              <Choice Kind="OperationNode" Name="Exit" />
+              <FullNameCategoryReference ID="System.Windows.Forms.Application" />
+            </p:NodeReference>
+          </Node>
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ SingleAppInstanceUtils ************************
+
+-->
+      <Node Name="SingleAppInstanceUtils" Bounds="882,493" Id="PRg2VV1Rmd7PphM6COCm5o">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="VL.Core" LastSymbolSource="VL.Core.dll">
+          <Choice Kind="TypeFlag" Name="SingleAppInstanceUtils" />
+        </p:TypeAnnotation>
+        <Patch Id="OktL7Yg7DT2LmaPzz5SO6A">
+          <Canvas Id="Q67E1Ct2Qk1PdfDeNYijv6" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="KpcxMMygY9FN7KP4TmsIMj" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="QWWbQYpeiO8OFF2ZB3tdaJ">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="PWqdDnMQhEuM2ecEyklrmT">
+        <Canvas Id="HjzN2WfXZ3dP3saiohLqe2" CanvasType="Group" />
+        <Patch Id="V3DQ29JDsqXLdUpw4aVBTJ" Name="Create" />
+        <Patch Id="QBwiedzkQlkN1jyed4kXCC" Name="Update" />
+        <ProcessDefinition Id="Il7UsOrVKUCPepjirEbX8B">
+          <Fragment Id="JJzXqfUFWXnObQPdv1OdGr" Patch="V3DQ29JDsqXLdUpw4aVBTJ" Enabled="true" />
+          <Fragment Id="QeGOTZptL7INxmSuDQGJ4z" Patch="QBwiedzkQlkN1jyed4kXCC" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.0" />
+  <PlatformDependency Id="IgvsUZKCGsdOqGzZwpzmQG" Location="mscorlib" />
+  <PlatformDependency Id="QDR9KUE0GtwN1kTlkPpL9c" Location="System.Windows.Forms" />
+  <PlatformDependency Id="JrjecpJBoeDMcM77y3BZkO" Location="../vvvv_Stride/public-vl/VL.CoreLib/src/bin/Release/net472/VL.Core.dll" />
+</Document>
