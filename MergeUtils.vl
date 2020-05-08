@@ -2,7 +2,7 @@
 <Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.0.53" Version="0.128">
   <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
-    <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="Application" CanvasType="FullCategory">
+    <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="MergeUtils" CanvasType="FullCategory">
       <!--
 
     ************************ GetProgramFilesFolder ************************
@@ -78,6 +78,58 @@
         <Patch Id="OktL7Yg7DT2LmaPzz5SO6A">
           <Canvas Id="Q67E1Ct2Qk1PdfDeNYijv6" BordersChecked="false" CanvasType="Group" />
           <ProcessDefinition Id="KpcxMMygY9FN7KP4TmsIMj" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ TopMost ************************
+
+-->
+      <Node Name="TopMost" Bounds="224,214,100,50" Id="IXDK8qNdfItN4z44XiUleT">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="CENCvwzWCEKQV8uX4oa6pO">
+          <Node Bounds="224,214,10,10" AutoConnect="true" Id="FeSiMwNsR8IPF3DbFsnir9">
+            <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
+              <Choice Kind="OperationNode" Name="TopMost" />
+              <FullNameCategoryReference ID="System.Windows.Forms.Form" />
+            </p:NodeReference>
+            <Pin Id="SwQJlygctUgP1yQj0CbY1q" Name="Input" Kind="StateInputPin" />
+            <Pin Id="VIs1z3LI5fXMlKGBCXEpo2" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="CGBtTeta3QFLF29YPWAbGo" Name="Top Most" Kind="OutputPin" />
+          </Node>
+          <Pin Id="Gq2v6jm6DxqNpoxY4E0hPN" Name="Input" Kind="InputPin" />
+          <Pin Id="KPTyshnES46Oc5qFnDWCWa" Name="Output" Kind="OutputPin" />
+          <Pin Id="MhGZbOPJ9ZlO69yPF6IXAr" Name="Top Most" Kind="OutputPin" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ SetTopMost ************************
+
+-->
+      <Node Name="SetTopMost" Bounds="224,364,100,50" Id="GNO2k1WzH1uMHq54MD3QsJ">
+        <p:NodeReference>
+          <Choice Kind="OperationDefinition" Name="Operation" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <Patch Id="AbEEeYdbcNzOtxsx6gJX80">
+          <Node Bounds="224,364,10,10" AutoConnect="true" Id="TtY8TUxO0XILJDMYoYFGvY">
+            <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
+              <Choice Kind="OperationNode" Name="SetTopMost" />
+              <FullNameCategoryReference ID="System.Windows.Forms.Form" />
+            </p:NodeReference>
+            <Pin Id="TSlMY4zB3eCLtd5IN6tIdS" Name="Input" Kind="StateInputPin" />
+            <Pin Id="JscGsQLfNaTPEZIGEDSRS4" Name="Value" Kind="InputPin" />
+            <Pin Id="KJHe6KhBNDZLZCpO4s7tmV" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Pin Id="BRCvs2iyL43QDSRPSt5SOu" Name="Input" Kind="InputPin" />
+          <Pin Id="SROXyPBdKgYOHZoSy7B7AU" Name="Value" Kind="InputPin" />
+          <Pin Id="LL207pr0q5nNKt3ou70gSO" Name="Output" Kind="OutputPin" />
         </Patch>
       </Node>
     </Canvas>
