@@ -250,6 +250,45 @@
           </Node>
         </Canvas>
       </Canvas>
+      <!--
+
+    ************************ Clipboard ************************
+
+-->
+      <Node Name="Clipboard" Bounds="634,381" Id="GtZOpHlst20NYZmic1Cyx0">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="System.Windows.Forms" LastSymbolSource="System.Windows.Forms.dll">
+          <Choice Kind="TypeFlag" Name="Clipboard" />
+        </p:TypeAnnotation>
+        <Patch Id="Glal9dTmTgULxdqNmcPmhg">
+          <Canvas Id="J9rmh1aV05TOheLbDmEe0p" CanvasType="Group" />
+          <ProcessDefinition Id="RDnLCoKuoevQAePmMXFve8" IsHidden="true" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ TextData ************************
+
+-->
+      <Node Name="TextData" Bounds="772,501,80,80" Id="K73uXvdatsSL8XkZorbzUR">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="GHY0F0f7J64OQf5eUZfV0n">
+          <Node Bounds="794,533,37,19" AutoConnect="true" Id="CHGAtDEAxvFQaaQQMtYDRL">
+            <p:NodeReference LastCategoryFullName="System.Windows.Forms.DataFormats" LastSymbolSource="System.Windows.Forms.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Text" />
+              <CategoryReference Kind="AssemblyCategory" Name="DataFormats" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <Pin Id="UhH7yvaYA27MmjswLL3Vr6" Name="Text" Kind="OutputPin" />
+          </Node>
+          <Pin Id="Al9cnL5G8nmMxKHIfmdDhD" Name="Text" Kind="OutputPin" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
