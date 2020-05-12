@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.1.106" Version="0.128">
-  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.1-0106-g7b998c2390" />
+<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.0.53" Version="0.128">
+  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.0" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
     <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" CanvasType="FullCategory">
       <!--
@@ -272,7 +272,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.1-0106-g7b998c2390" />
+  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.0" />
   <PlatformDependency Id="IgvsUZKCGsdOqGzZwpzmQG" Location="mscorlib" />
   <PlatformDependency Id="QDR9KUE0GtwN1kTlkPpL9c" Location="System.Windows.Forms" />
   <PlatformDependency Id="JrjecpJBoeDMcM77y3BZkO" Location="../vvvv_Stride/public-vl/VL.CoreLib/src/bin/Release/net472/VL.Core.dll" />
