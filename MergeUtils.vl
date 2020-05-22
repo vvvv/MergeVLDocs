@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.0.53" Version="0.128">
-  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.0" />
+<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.1.108" Version="0.128">
+  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.1" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
     <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" CanvasType="FullCategory">
       <!--
@@ -116,7 +116,7 @@
           <Choice Kind="OperationDefinition" Name="Operation" />
           <FullNameCategoryReference ID="Primitive" />
         </p:NodeReference>
-        <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+        <p:HideCategory p:Type="Boolean">true</p:HideCategory>
         <Patch Id="AbEEeYdbcNzOtxsx6gJX80">
           <Node Bounds="154,429,70,26" AutoConnect="true" Id="TtY8TUxO0XILJDMYoYFGvY">
             <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
@@ -667,7 +667,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.0" />
+  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.1" />
   <PlatformDependency Id="IgvsUZKCGsdOqGzZwpzmQG" Location="mscorlib" />
   <PlatformDependency Id="QDR9KUE0GtwN1kTlkPpL9c" Location="System.Windows.Forms" />
   <PlatformDependency Id="JrjecpJBoeDMcM77y3BZkO" Location="../vvvv_Stride/public-vl/VL.CoreLib/src/bin/Release/net472/VL.Core.dll" />
