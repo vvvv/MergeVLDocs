@@ -2,7 +2,7 @@
 <Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.1.108" Version="0.128">
   <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.1" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
-    <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" CanvasType="FullCategory">
+    <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="MergeUtils" CanvasType="FullCategory">
       <!--
 
     ************************ GetProgramFilesFolder ************************
@@ -461,7 +461,7 @@
                 <Pin Id="EOwW9Jq4UlDPgu8zDuCzyC" Name="Result" Kind="OutputPin" />
               </Node>
               <Node Bounds="1223,620,98,19" Id="DfLdlzdvtYTPQysNG1gPSN">
-                <p:NodeReference LastCategoryFullName="SingleAppInstanceUtils" LastSymbolSource="MergeUtils.vl">
+                <p:NodeReference LastCategoryFullName="MergeUtils.SingleAppInstanceUtils" LastSymbolSource="MergeUtils.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="SendDataMessage" />
                 </p:NodeReference>
@@ -501,7 +501,7 @@
           <Patch Id="SBlZi5jLhtnQXpmeoRX9hC" Name="Create" ParticipatingElements="MfxA7CisxuaOMQkuaEfsBC" ManuallySortedPins="true" />
           <Patch Id="IZulOWEDJ87PsfwMSqFmtO" Name="Then" ManuallySortedPins="true" />
           <Node Bounds="1178,285,156,19" Id="MfxA7CisxuaOMQkuaEfsBC">
-            <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="MergeVLDocs.vl">
+            <p:NodeReference LastCategoryFullName="MergeUtils" LastSymbolSource="MergeUtils.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="AbortIfOtherInstanceIsRunning" />
             </p:NodeReference>
@@ -650,12 +650,13 @@
     ************************ FormClosing ************************
 
 -->
-      <Node Name="FormClosing" Bounds="335,762,98,80" Id="E5T9N9T7MjgOY5s7yWfaCV">
+      <Node Name="FormClosing" Bounds="344,761,98,80" Id="E5T9N9T7MjgOY5s7yWfaCV">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="OperationDefinition" Name="Operation" />
         </p:NodeReference>
+        <p:HideCategory p:Type="Boolean">true</p:HideCategory>
         <Patch Id="R9TieEcStWJNxwvxOfD1mb">
-          <Node Bounds="347,790,74,26" AutoConnect="true" Id="ROxyXCNrS97MJoZXrWSiHa">
+          <Node Bounds="356,789,74,26" AutoConnect="true" Id="ROxyXCNrS97MJoZXrWSiHa">
             <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="AssemblyCategory" Name="Form" />
