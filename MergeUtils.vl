@@ -645,6 +645,29 @@
           <Link Id="Ju4GNAFRNdLNoQ8doGsvLz" Ids="BYV0lbE0C0jOwZr9jz0BdO,RHhDamrPvx9PbOLmpH5T3C" IsHidden="true" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ FormClosing ************************
+
+-->
+      <Node Name="FormClosing" Bounds="335,762,98,80" Id="E5T9N9T7MjgOY5s7yWfaCV">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="OperationDefinition" Name="Operation" />
+        </p:NodeReference>
+        <Patch Id="R9TieEcStWJNxwvxOfD1mb">
+          <Node Bounds="347,790,74,26" AutoConnect="true" Id="ROxyXCNrS97MJoZXrWSiHa">
+            <p:NodeReference LastCategoryFullName="System.Windows.Forms.Form" LastSymbolSource="System.Windows.Forms.dll">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="AssemblyCategory" Name="Form" />
+              <Choice Kind="OperationCallFlag" Name="FormClosing" />
+            </p:NodeReference>
+            <Pin Id="U1mJcscn71DNmRDYmtWSYn" Name="Input" Kind="StateInputPin" />
+            <Pin Id="TvvpiwkEbf8LTkXnQ91IRF" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pin Id="JNhOLouXr0bM4bwxwA6vKv" Name="Input" Kind="InputPin" />
+          <Pin Id="BoKuqvAMdbCLGebb5jR6Vk" Name="Result" Kind="OutputPin" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
