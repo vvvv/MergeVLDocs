@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.1.108" Version="0.128">
-  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.1" />
+<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
     <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="MergeUtils" CanvasType="FullCategory">
       <!--
@@ -160,6 +160,30 @@
               <Pin Id="BGCf1rnAZU7LkMaZJlcFs6" Name="Name" Kind="OutputPin" />
             </Patch>
           </Node>
+          <!--
+
+    ************************ Create ************************
+
+-->
+          <Node Name="Create" Bounds="438,422,80,80" Id="TI47Tsmx9sXQGC1HTh6Y12">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="UqTE0f1O8ePLWsgSQnU3VZ">
+              <Node Bounds="452,450,53,26" AutoConnect="true" Id="PuEkFlZk6FUOOaI2c6XRtW">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XAttribute" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XAttribute" />
+                </p:NodeReference>
+                <Pin Id="O4SeknAPUJdPkyU7XsR6Pd" Name="Other" Kind="InputPin" />
+                <Pin Id="QeeVVZqZZOOOuwBFvEUcxH" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="GWdHbGe6HXNPgSU7MnjJQw" Name="Other" Kind="InputPin" />
+              <Pin Id="LoeZ9xU2XPZOXmjmR5dw2r" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
         </Canvas>
         <!--
 
@@ -248,7 +272,204 @@
               <Pin Id="UyNmfvqB0EIMHN3NIkLzy7" Name="Name" Kind="OutputPin" />
             </Patch>
           </Node>
+          <!--
+
+    ************************ Create ************************
+
+-->
+          <Node Name="Create" Bounds="456,472,80,80" Id="IrwDaJK89G8PpOIlBw3ohl">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="I2wpTRe6CdNNMkUUzDQP1L">
+              <Node Bounds="472,501,49,26" AutoConnect="true" Id="M7UdoyBKEd5Qbd0WBUUnoZ">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XElement" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="Create" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XElement" />
+                  <PinReference Kind="InputPin" Name="Other">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Xml.Linq" LastSymbolSource="System.Xml.Linq.dll">
+                      <Choice Kind="TypeFlag" Name="XElement" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                </p:NodeReference>
+                <Pin Id="AEggVXo6I2LQKkiQMd9Smu" Name="Other" Kind="InputPin" />
+                <Pin Id="VFXXkyAJNdaO86MXJYcWPN" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="SnmRsdkwrMSNwVWrdxShuI" Name="Other" Kind="InputPin" />
+              <Pin Id="VfALzTvT5hrL0bslzOCxUT" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
         </Canvas>
+        <!--
+
+    ************************ XComment ************************
+
+-->
+        <Node Name="XComment" Bounds="334,336" Id="GTwoUbj5YH0MaRhQG5HTvM">
+          <p:NodeReference>
+            <Choice Kind="ForwardDefinition" Name="Forward" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:TypeAnnotation LastCategoryFullName="System.Xml.Linq" LastSymbolSource="System.Xml.Linq.dll">
+            <Choice Kind="TypeFlag" Name="XComment" />
+          </p:TypeAnnotation>
+          <Patch Id="Og1gTEe4Q4fN8M1fTGCauR">
+            <Canvas Id="U76QY6pr2vYLsuvYH7PYJL" BordersChecked="false" CanvasType="Group" />
+            <ProcessDefinition Id="Ees4olh8vMbO1KHwvCraTs" IsHidden="true" />
+          </Patch>
+        </Node>
+        <Canvas Id="VpX4Yc3LdFBOl9X2R8T8qj" Name="XNode" Position="410,432">
+          <!--
+
+    ************************ PreviousNode ************************
+
+-->
+          <Node Name="PreviousNode" Bounds="256,354,100,50" Id="H9nfAb5wAIpMNb1fDT7UZj">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="P3lWUAhhiwfLbEXt82eJzS">
+              <Node Bounds="256,354,10,10" AutoConnect="true" Id="PGPkzlLbb5YPTfaYLMbGhf">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XNode" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="PreviousNode" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XNode" />
+                </p:NodeReference>
+                <Pin Id="IKmT2PVIFlTLnnrOr6OSbS" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MelzkJxRVALLbu0ao2mXI3" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="QoGYn1cleVIN6mMZzLzK9W" Name="Previous Node" Kind="OutputPin" />
+              </Node>
+              <Pin Id="MNMEs12F7DPN2ZZdwxvvCZ" Name="Input" Kind="InputPin" />
+              <Pin Id="TkPs0cDXxKYPUOiim6Qoev" Name="Output" Kind="OutputPin" />
+              <Pin Id="IStAyG2bL9HQDLNabbVjmx" Name="Previous Node" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ AddBeforeSelf ************************
+
+-->
+          <Node Name="AddBeforeSelf" Bounds="246,485,100,50" Id="AOFAfno0ukRLKcQT7d3HPl">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="TGUv4QvhpylOEqiQaK2yE1">
+              <Node Bounds="246,485,10,10" AutoConnect="true" Id="OHqE4eZtuhlMGVOyZyGZVR">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XNode" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="AddBeforeSelf" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XNode" />
+                  <PinReference Kind="InputPin" Name="this">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Xml.Linq" LastSymbolSource="System.Xml.Linq.dll">
+                      <Choice Kind="TypeFlag" Name="XNode" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                  <PinReference Kind="InputPin" Name="Content">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                      <Choice Kind="TypeFlag" Name="Object" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                </p:NodeReference>
+                <Pin Id="Uw0pcnWqS7FM7TYXX8DWqK" Name="Input" Kind="StateInputPin" />
+                <Pin Id="D2f1BJLLBNfMoi4ea6O0qB" Name="Content" Kind="InputPin" />
+                <Pin Id="UKrahSLHtt7P2oYQucEjqw" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="VB311GJF1hRMYEO1lzJxhG" Name="Input" Kind="InputPin" />
+              <Pin Id="UxGiKMrjuk6LSi402cI29E" Name="Content" Kind="InputPin" />
+              <Pin Id="VyPGVhq19iHPwXikq6OcEc" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ Remove ************************
+
+-->
+          <Node Name="Remove" Bounds="446,387,100,50" Id="C1gkhrn97IJLrOzvinOx9C">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="K1MkCnsZF0BMvmHQk4t9nZ">
+              <Node Bounds="446,387,10,10" AutoConnect="true" Id="JneF9n6U7fAM8cNgY2jEc5">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XNode" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="Remove" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XNode" />
+                </p:NodeReference>
+                <Pin Id="E4ArkGDBS2GPwsr2vL6okm" Name="Input" Kind="StateInputPin" />
+                <Pin Id="AIZfpdEykgpK99wHjOkUmN" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="NknP7WrOKqsLC9KZSIkntM" Name="Input" Kind="InputPin" />
+              <Pin Id="OsDVgmjn70QMnBUmfKoKKA" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ ReplaceWith ************************
+
+-->
+          <Node Name="ReplaceWith" Bounds="446,537,100,50" Id="HGxUsgj0RGHLetxps42d07">
+            <p:NodeReference>
+              <Choice Kind="OperationDefinition" Name="Operation" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+            <Patch Id="LnVtI9zernDLI0VV8i5XPI">
+              <Node Bounds="446,537,10,10" AutoConnect="true" Id="OSlGMLJvBnXPsKRImLTnAp">
+                <p:NodeReference LastCategoryFullName="System.Xml.Linq.XNode" LastSymbolSource="System.Xml.Linq.dll">
+                  <Choice Kind="OperationNode" Name="ReplaceWith" />
+                  <FullNameCategoryReference ID="System.Xml.Linq.XNode" />
+                  <PinReference Kind="InputPin" Name="this">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System.Xml.Linq" LastSymbolSource="System.Xml.Linq.dll">
+                      <Choice Kind="TypeFlag" Name="XNode" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                  <PinReference Kind="InputPin" Name="Content">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+                      <Choice Kind="TypeFlag" Name="Object" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                </p:NodeReference>
+                <Pin Id="MLkhXM66XJyM8AGFypX5kA" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CndguTIInywOfGZhsXfAYg" Name="Content" Kind="InputPin" />
+                <Pin Id="G02PDab7twfQU0kzKhu29M" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Pin Id="RuWXBvkQR7gQGWOJSpsT9S" Name="Input" Kind="InputPin" />
+              <Pin Id="SF1s8hskV3fMlOQydN2QxN" Name="Content" Kind="InputPin" />
+              <Pin Id="Q2Zi7qTxLUVOgSRj02RmXt" Name="Output" Kind="OutputPin" />
+            </Patch>
+          </Node>
+        </Canvas>
+        <!--
+
+    ************************ Document ************************
+
+-->
+        <Node Name="Document" Bounds="368,566,100,50" Id="NqupmGiGKQKNmGsDgtj5kr">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">false</p:HideCategory>
+          <Patch Id="DRPTtXA5IdPPXsj2UJIBri">
+            <Node Bounds="368,566,10,10" AutoConnect="true" Id="FicDX4P842DOCUHHnkDxK9">
+              <p:NodeReference LastCategoryFullName="System.Xml.Linq.XObject" LastSymbolSource="System.Xml.Linq.dll">
+                <Choice Kind="OperationNode" Name="Document" />
+                <FullNameCategoryReference ID="System.Xml.Linq.XObject" />
+              </p:NodeReference>
+              <Pin Id="Mnuhu67ANXPLMX8sDhBQIF" Name="Input" Kind="StateInputPin" />
+              <Pin Id="FHkSZYGRf0aLtDzIid52wV" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="NzuCCrZMfGJO1mrCwTPyIz" Name="Document" Kind="OutputPin" />
+            </Node>
+            <Pin Id="IJfDbn1WsrpM4Szvrd6DJ0" Name="Input" Kind="InputPin" />
+            <Pin Id="I3ar1HL9U7NMKfNWToP4pp" Name="Output" Kind="OutputPin" />
+            <Pin Id="LlgrZ2jxB4IPfbQ2I0f9IA" Name="Document" Kind="OutputPin" />
+          </Patch>
+        </Node>
       </Canvas>
       <!--
 
@@ -691,7 +912,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.1" />
+  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.3" />
   <PlatformDependency Id="IgvsUZKCGsdOqGzZwpzmQG" Location="mscorlib" />
   <PlatformDependency Id="QDR9KUE0GtwN1kTlkPpL9c" Location="System.Windows.Forms" />
   <PlatformDependency Id="JrjecpJBoeDMcM77y3BZkO" Location="../vvvv_Stride/public-vl/VL.CoreLib/src/bin/Release/net472/VL.Core.dll" />
