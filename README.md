@@ -59,9 +59,7 @@ After merging:
 ### Setup
 For now, it is manual.
 
-* Check out this repo
-* Open MergeVLDocs with vvvv gamma 2020.1. Ignore runtime errors.
-* Export it
+* Download the PreRelease
 * Go to your windows user folder (typically `C:\Users\__MEMEMEME__`) and edit the .gitconfig file. Consider making a copy of the original file before changing it.
 ```
   [merge]
