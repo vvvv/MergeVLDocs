@@ -59,7 +59,8 @@ After merging:
 ### Setup
 For now, it is manual.
 
-* Download the PreRelease
+* Download the PreRelease 
+* Unzip, make sure the name containing the exe is called just MergeVLDocs and move that folder under C:/Program Files/ or whereever you want it
 * Go to your windows user folder (typically `C:\Users\__MEMEMEME__`) and edit the .gitconfig file. Consider making a copy of the original file before changing it.
 ```
   [merge]
@@ -67,10 +68,11 @@ For now, it is manual.
 ```
 ```
   [mergetool "MergeVLDocs"]
-    cmd = \"C:/_____FIXTHISPATH_____/MergeVLDocs.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-    path = C:/_____FIXTHISPATH_____/MergeVLDocs.exe
+    cmd = \"C:/Program Files/MergeVLDocs/MergeVLDocs.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    path = C:/Program Files/MergeVLDocs/MergeVLDocs.exe
 ```
-Note that the path is made of slashes, not back-slashes. (Sorry for inconvenience)
+make sure the path above is correct and the executable is at the correect location.
+Note that the path is made of slashes, not back-slashes. (Sorry for the inconvenience)
 
 This configures our merge tool to be called regardless of the file type. The idea here is that our tool should do its job for VL-files, but call the previously configured tool in all other cases.
 * For now: Install p4merge. This tool gets called by MergeVLDocs if it detects that it is not responsible for the file type in question. 
