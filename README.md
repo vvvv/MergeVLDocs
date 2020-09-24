@@ -67,9 +67,11 @@ For now, it is manual.
 ```
 ```
   [mergetool "MergeVLDocs"]
-    cmd = \"C:/___FIXTHISPATH___/vvvv/gamma/Exports/MergeVLDocs/MergeVLDocs.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-    path = C:/___FIXTHISPATH___/vvvv/gamma/Exports/MergeVLDocs/MergeVLDocs.exe
+    cmd = \"C:/_____FIXTHISPATH_____/MergeVLDocs.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+    path = C:/_____FIXTHISPATH_____/MergeVLDocs.exe
 ```
+Note that the path is made of slashes, not back-slashes. (Sorry for inconvenience)
+
 This configures our merge tool to be called regardless of the file type. The idea here is that our tool should do its job for VL-files, but call the previously configured tool in all other cases.
 * For now: Install p4merge. This tool gets called by MergeVLDocs if it detects that it is not responsible for the file type in question. 
 
