@@ -71,7 +71,7 @@ For now, it is manual.
     cmd = \"C:/Program Files/MergeVLDocs/MergeVLDocs.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
     path = C:/Program Files/MergeVLDocs/MergeVLDocs.exe
 ```
-make sure the path above is correct and the executable is at the correect location.
+make sure the path above is correct and the executable is at the correct location.
 Note that the path is made of slashes, not back-slashes. (Sorry for the inconvenience)
 
 This configures our merge tool to be called regardless of the file type. The idea here is that our tool should do its job for VL-files, but call the previously configured tool in all other cases.
