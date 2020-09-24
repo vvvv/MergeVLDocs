@@ -60,7 +60,7 @@ After merging:
 For now, it is manual.
 
 * Download the PreRelease 
-* Unzip, make sure the name containing the exe is called just MergeVLDocs and move that folder under C:/Program Files/ or whereever you want it
+* Unzip, make sure the name containing the exe is called just MergeVLDocs and move that folder under `C:\Program Files` or whereever you want it
 * Go to your windows user folder (typically `C:\Users\__MEMEMEME__`) and edit the .gitconfig file. Consider making a copy of the original file before changing it.
 ```
   [merge]
