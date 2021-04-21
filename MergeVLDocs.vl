@@ -7720,6 +7720,7 @@
               <Pin Id="RVrewrKr9vLNKFd0AgdghL" Name="Merged" Kind="InputPin" />
               <Pin Id="NUhA1jNSqaxLFONZfTfpmj" Name="Merged Items" Kind="InputPin" />
               <Pin Id="P2w5n2BniBoL228tNSOsWQ" Name="Branch" Kind="InputPin" />
+              <Pin Id="HHiErOuhe1lPxKy7PNQJzz" Name="Reference Branch" Kind="InputPin" />
               <Pin Id="Mivy9bpvnPSMCrelG5eBHa" Name="Branch Id" Kind="InputPin" />
               <Pin Id="KscEMeyuEFQM4iy5ptMB3l" Name="Base" Kind="InputPin" />
               <Pin Id="MIOSjKfi116Lgmeh3FXi0i" Name="Local" Kind="InputPin" />
@@ -7860,6 +7861,7 @@
             <ControlPoint Id="VfrWd4RVf2IM6MhFKDBT3S" Bounds="1462,1073" />
             <Link Id="CUvN5cYJgaBLqc0o7JSBrl" Ids="Qu21zHGYacTLQ1rtojeBpF,MagbHyF7vQxQTxhShN1Yya" />
             <Link Id="RoHzmZjKW6nPJKpdHkO8uJ" Ids="B1UK6fRcFefPMx5FzssY9v,F11Xfrj7rWLOcMcBHu3nNK" />
+            <Link Id="SLGAt5PFtLIPyatUODOnhY" Ids="S0hjAs8RrmwMfWl0kxMJxQ,HHiErOuhe1lPxKy7PNQJzz" />
           </Patch>
         </Node>
         <!--
@@ -7884,7 +7886,7 @@
               <Patch Id="O9tnuIpkHC9Ow3uBfSMTaV" Name="Predicate" ManuallySortedPins="true">
                 <Pin Id="PMnq0kQ9aNhPMk7Cj5t0D9" Name="item" Kind="InputPin" />
                 <Pin Id="Okh5K4h8TodPHD9hGev9dZ" Name="_" Kind="InputPin" />
-                <Pin Id="PyCjkmw2G2HMdMjQJ26ZOs" Name="not found in base" Kind="OutputPin" />
+                <Pin Id="PyCjkmw2G2HMdMjQJ26ZOs" Name="not found in reference branch" Kind="OutputPin" />
                 <ControlPoint Id="JO4U3N7ZLMzQL9ez4PvZHp" Bounds="2108,1670" />
                 <ControlPoint Id="TDanjFMnfTCOKQpzdh1CfL" Bounds="2221,1669" />
                 <ControlPoint Id="BH8iGFfeek4QJzvv1sxik1" Bounds="2218,1783" />
@@ -7908,7 +7910,6 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="TNgQTGFXVaJNHNDUQa5F29" Bounds="2174,1624" />
             <ControlPoint Id="Swjz8Fv6IAqPN51OmUzDd9" Bounds="2042,2026" />
             <ControlPoint Id="B3BgOKmLI9XLypaz2PD3vx" Bounds="2069,2147" />
             <Pad Id="H8a6NRQDlnzMEoaPoGfD36" Bounds="2322,1690,171,72" ShowValueBox="true" isIOBox="true" Value="take all from the branch that have a new Id or PropertyName ">
@@ -7929,9 +7930,7 @@
             <Link Id="IG4GITlN3DqMnzkQv8DKia" Ids="DvHMGCrcYHkNOwVdbZgi6U,BH8iGFfeek4QJzvv1sxik1" />
             <Link Id="Kgi1eHvR4YKNmrCDiPhQDr" Ids="Rg651a2uPnpMLwgpmtVMhS,TuxP0jtf7WLLyncZrScm9J" />
             <Link Id="E42b1js9NQDMR4dPkjdao4" Ids="JO4U3N7ZLMzQL9ez4PvZHp,NCloJE9ynwPNozoxQPy504" />
-            <Link Id="Bk6iSMyOe2NNOfJIkHUMlR" Ids="TNgQTGFXVaJNHNDUQa5F29,El5Z1AbcVu4MgyMRiEt2Kw" />
             <Link Id="Am0yy4isAUuOYtNxXCxd2n" Ids="IWrM0JecokNPMhS3Ohuj3a,IIZ8ChveUCZNycHRjUy3hR" />
-            <Link Id="Io5U2IJ8sN9NRElOKqVnsT" Ids="IDJntzq9d0rNgORYjEwKwG,TNgQTGFXVaJNHNDUQa5F29" IsHidden="true" />
             <Node Bounds="2067,2063,63,26" Id="EBM6lPCJBxpO2aXTfhFH89">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -8040,22 +8039,26 @@
                 <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
               </p:ValueBoxSettings>
             </Pad>
-            <Pin Id="Tc7YM3kgtI9MyDErw4uGtB" Name="Merged" Kind="InputPin" Bounds="819,409" />
-            <Pin Id="FJQPW4ohF0kP47ekCE2xZO" Name="Merged Items" Kind="InputPin" />
-            <Pin Id="AE9LURGzNUXL07Szm3lCJM" Name="Branch" Kind="InputPin" />
-            <Pin Id="QOPjt0IOPkKN1KElmlmG70" Name="Branch Id" Kind="InputPin" />
-            <Pin Id="IDJntzq9d0rNgORYjEwKwG" Name="Base" Kind="InputPin" />
-            <Pin Id="NCDsn4UHbtsQLMY5RtTXvL" Name="Local" Kind="InputPin" />
-            <Pin Id="Nz3zy1GpqyFM9vlMXZHsw1" Name="Remote" Kind="InputPin" />
-            <Pin Id="TKIbrk14hajPUZWH2eCoqO" Name="Merged" Kind="OutputPin" Bounds="736,860" />
-            <Pin Id="RNeMkQHTeczNYrRs2eNa5D" Name="Merged Items" Kind="OutputPin" />
             <Link Id="DSCNJMSscgYMKIYa5Gtiji" Ids="GRlqZQFq7liNfoCZuwqork,LiK6Lr6SWB9PEhQPVBt4Ay" />
             <ControlPoint Id="GRlqZQFq7liNfoCZuwqork" Bounds="2479,1857" />
-            <Pin Id="EK3GnvBMHbLNGaL2El0QLQ" Name="Parent" Kind="InputPin" Bounds="2478,1779" />
             <Link Id="IT49DUbASKiMzOjMqPuv1T" Ids="EK3GnvBMHbLNGaL2El0QLQ,GRlqZQFq7liNfoCZuwqork" IsHidden="true" />
             <Link Id="C33ytLS27Y9PsDJk7MKuFA" Ids="H6j06u9eQ7fNE1XA4Z2y6j,BsJvO29hTg0ND4NkdbVhsT" />
             <Link Id="PEjDWGjv5SIOdXquELYu5u" Ids="LkOPuIvYuu4LV2e3NURbvF,BSVMFtJdw6vNXimFJro6J5" />
             <Link Id="TvH0vyMI8FnLvG4xjBaoV9" Ids="LkOPuIvYuu4LV2e3NURbvF,UczxvB0eypkLmmDLJauu7J" />
+            <ControlPoint Id="FBmQiSRAY8NMDQAN2Dup67" Bounds="2175,1624" />
+            <Link Id="Dja3ruwre0OOQ8wrxtqPoG" Ids="EF9zogyfCrwNqPQI4BTiSC,FBmQiSRAY8NMDQAN2Dup67" IsHidden="true" />
+            <Link Id="G3ZUWFtIoFCPus5KHBCqIl" Ids="FBmQiSRAY8NMDQAN2Dup67,El5Z1AbcVu4MgyMRiEt2Kw" />
+            <Pin Id="Tc7YM3kgtI9MyDErw4uGtB" Name="Merged" Kind="InputPin" Bounds="819,409" />
+            <Pin Id="FJQPW4ohF0kP47ekCE2xZO" Name="Merged Items" Kind="InputPin" />
+            <Pin Id="AE9LURGzNUXL07Szm3lCJM" Name="Branch" Kind="InputPin" />
+            <Pin Id="EF9zogyfCrwNqPQI4BTiSC" Name="Reference Branch" Kind="InputPin" />
+            <Pin Id="QOPjt0IOPkKN1KElmlmG70" Name="Branch Id" Kind="InputPin" />
+            <Pin Id="IDJntzq9d0rNgORYjEwKwG" Name="Base" Kind="InputPin" />
+            <Pin Id="NCDsn4UHbtsQLMY5RtTXvL" Name="Local" Kind="InputPin" />
+            <Pin Id="Nz3zy1GpqyFM9vlMXZHsw1" Name="Remote" Kind="InputPin" />
+            <Pin Id="EK3GnvBMHbLNGaL2El0QLQ" Name="Parent" Kind="InputPin" Bounds="2478,1779" />
+            <Pin Id="TKIbrk14hajPUZWH2eCoqO" Name="Merged" Kind="OutputPin" Bounds="736,860" />
+            <Pin Id="RNeMkQHTeczNYrRs2eNa5D" Name="Merged Items" Kind="OutputPin" />
           </Patch>
         </Node>
         <Canvas Id="UN2p4QdgX8SP6OjNV7YnOv" Name="PickingReferenceBranch" Position="1493,976">
