@@ -2185,7 +2185,7 @@
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
                 <CategoryReference Kind="Category" Name="Skia" NeedsToBeDirectParent="true" />
               </p:NodeReference>
-              <Pin Id="FjnQULovMzYLQ0a5Ys1mXY" Name="Bounds" Kind="InputPin" DefaultValue="1132, 343, 372, 407">
+              <Pin Id="FjnQULovMzYLQ0a5Ys1mXY" Name="Bounds" Kind="InputPin" DefaultValue="1317, 459, 372, 407">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
@@ -7072,7 +7072,7 @@
               </p:NodeReference>
               <Patch Id="PzAl96lvVGnO7XvoDf1SVa" ManuallySortedPins="true">
                 <ControlPoint Id="HGey1JhWD4nMzFeG7ibyPC" Bounds="976,873" />
-                <ControlPoint Id="MoGreQvJPSDLSBjTCCotV8" Bounds="1088,873" />
+                <ControlPoint Id="MoGreQvJPSDLSBjTCCotV8" Bounds="1088,872" />
                 <ControlPoint Id="Axoo8w54CvLO9i7iyt8wSY" Bounds="1210,873" />
                 <Node Bounds="1140,953,103,19" Id="LaTcVJjYwD3PZ6mDCJmuxr">
                   <p:NodeReference LastCategoryFullName="Main.MergeAlgo" LastSymbolSource="MergeVLDocs.vl">
@@ -7715,13 +7715,13 @@
             <Node Bounds="1551,1493,145,19" Id="PciFylHcNErPqAuQpem3GR">
               <p:NodeReference LastCategoryFullName="Main.MergeAlgo" LastSymbolSource="MergeVLDocs.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <Choice Kind="OperationCallFlag" Name="AddNew" />
+                <Choice Kind="OperationCallFlag" Name="AddNewInOtherBranch" />
               </p:NodeReference>
               <Pin Id="RVrewrKr9vLNKFd0AgdghL" Name="Merged" Kind="InputPin" />
               <Pin Id="NUhA1jNSqaxLFONZfTfpmj" Name="Merged Items" Kind="InputPin" />
               <Pin Id="P2w5n2BniBoL228tNSOsWQ" Name="Branch" Kind="InputPin" />
-              <Pin Id="HHiErOuhe1lPxKy7PNQJzz" Name="Reference Branch" Kind="InputPin" />
               <Pin Id="Mivy9bpvnPSMCrelG5eBHa" Name="Branch Id" Kind="InputPin" />
+              <Pin Id="HHiErOuhe1lPxKy7PNQJzz" Name="Reference Branch" Kind="InputPin" />
               <Pin Id="KscEMeyuEFQM4iy5ptMB3l" Name="Base" Kind="InputPin" />
               <Pin Id="MIOSjKfi116Lgmeh3FXi0i" Name="Local" Kind="InputPin" />
               <Pin Id="QdXys3SOn1FQXpovi9saRp" Name="Remote" Kind="InputPin" />
@@ -7793,7 +7793,7 @@
             <Link Id="NPN5MJniWmALQUqPnXSpls" Ids="EpGGLzqzIXrMkkqNcOdSmK,T2zF06gvZdUOdHoK3kov6h" />
             <Link Id="R3K10PE3qOaLXGpe9mgInK" Ids="NkMFnt7arAZO5Bk0FY9AHC,OjIp5tJ4cxDO2Uoqbb5bXu" />
             <Link Id="Mz2OmpaIMFmPl8n3sSE21U" Ids="HmC5yHnKn3SPmKjuo5zYWr,CPzNZkC1lMZPOed76RdPM5" />
-            <ControlPoint Id="HmC5yHnKn3SPmKjuo5zYWr" Bounds="1681,1272" />
+            <ControlPoint Id="HmC5yHnKn3SPmKjuo5zYWr" Bounds="1680,1272" />
             <Pin Id="BZsreo8IFsSPKIaREl4PHc" Name="Parent" Kind="InputPin" Bounds="1702,1336" />
             <Link Id="NEqEedBKmZJMoZQU8mJeMY" Ids="BZsreo8IFsSPKIaREl4PHc,HmC5yHnKn3SPmKjuo5zYWr" IsHidden="true" />
             <Link Id="MlG2YfIHADfLJS8qrAzbD0" Ids="HmC5yHnKn3SPmKjuo5zYWr,MAHFOga7BKOOj5NZsAqPLk" />
@@ -7861,21 +7861,23 @@
             <ControlPoint Id="VfrWd4RVf2IM6MhFKDBT3S" Bounds="1462,1073" />
             <Link Id="CUvN5cYJgaBLqc0o7JSBrl" Ids="Qu21zHGYacTLQ1rtojeBpF,MagbHyF7vQxQTxhShN1Yya" />
             <Link Id="RoHzmZjKW6nPJKpdHkO8uJ" Ids="B1UK6fRcFefPMx5FzssY9v,F11Xfrj7rWLOcMcBHu3nNK" />
-            <Link Id="SLGAt5PFtLIPyatUODOnhY" Ids="S0hjAs8RrmwMfWl0kxMJxQ,HHiErOuhe1lPxKy7PNQJzz" />
+            <Link Id="SLGAt5PFtLIPyatUODOnhY" Ids="S0hjAs8RrmwMfWl0kxMJxQ,NjgGBZbH3w3ParkyDBK8rE,G2UZHDFMc12Mq2ebKAFyxM,HHiErOuhe1lPxKy7PNQJzz" />
+            <ControlPoint Id="NjgGBZbH3w3ParkyDBK8rE" Bounds="1518,1239" />
+            <ControlPoint Id="G2UZHDFMc12Mq2ebKAFyxM" Bounds="1632,1245" />
           </Patch>
         </Node>
         <!--
 
-    ************************ AddNew ************************
+    ************************ AddNewInOtherBranch ************************
 
 -->
-        <Node Name="AddNew" Bounds="2028,1606,514,558" Id="G6joyUBSRnKOF6WBpRM0xu">
+        <Node Name="AddNewInOtherBranch" Bounds="2028,1604,561,560" Id="G6joyUBSRnKOF6WBpRM0xu">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="OperationDefinition" Name="Operation" />
           </p:NodeReference>
           <Patch Id="Rert4PxyJ5yOz0eWaXfNrM" IsGeneric="true" ManuallySortedPins="true">
-            <ControlPoint Id="Rg651a2uPnpMLwgpmtVMhS" Bounds="2106,1624" />
-            <Node Bounds="2104,1661,207,129" Id="Oi7Wore6wsxMcVLRxEcJG7">
+            <ControlPoint Id="Rg651a2uPnpMLwgpmtVMhS" Bounds="2106,1623" />
+            <Node Bounds="2104,1661,265,147" Id="Oi7Wore6wsxMcVLRxEcJG7">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="OperationCallFlag" Name="Where" />
                 <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -7886,19 +7888,11 @@
               <Patch Id="O9tnuIpkHC9Ow3uBfSMTaV" Name="Predicate" ManuallySortedPins="true">
                 <Pin Id="PMnq0kQ9aNhPMk7Cj5t0D9" Name="item" Kind="InputPin" />
                 <Pin Id="Okh5K4h8TodPHD9hGev9dZ" Name="_" Kind="InputPin" />
-                <Pin Id="PyCjkmw2G2HMdMjQJ26ZOs" Name="not found in reference branch" Kind="OutputPin" />
+                <Pin Id="PyCjkmw2G2HMdMjQJ26ZOs" Name="NotInRefBranchAndNew" Kind="OutputPin" />
                 <ControlPoint Id="JO4U3N7ZLMzQL9ez4PvZHp" Bounds="2108,1670" />
                 <ControlPoint Id="TDanjFMnfTCOKQpzdh1CfL" Bounds="2221,1669" />
-                <ControlPoint Id="BH8iGFfeek4QJzvv1sxik1" Bounds="2218,1783" />
-                <Node Bounds="2216,1744,37,19" Id="G5gpXlXkHd1Ofgc4AQHNEB">
-                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <Choice Kind="OperationCallFlag" Name="NOT" />
-                  </p:NodeReference>
-                  <Pin Id="IIZ8ChveUCZNycHRjUy3hR" Name="Input" Kind="StateInputPin" />
-                  <Pin Id="DvHMGCrcYHkNOwVdbZgi6U" Name="Output" Kind="StateOutputPin" />
-                </Node>
-                <Node Bounds="2171,1709,50,19" Id="RenlZUTyc5mPAZVs73kzd9">
+                <ControlPoint Id="BH8iGFfeek4QJzvv1sxik1" Bounds="2248,1801" />
+                <Node Bounds="2171,1694,50,19" Id="RenlZUTyc5mPAZVs73kzd9">
                   <p:NodeReference LastCategoryFullName="Main.MergeAlgo.Lookup" LastSymbolSource="MergeVLDocs.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Lookup" />
@@ -7908,11 +7902,46 @@
                   <Pin Id="F3xjdPNqazsOU52VMVFeM9" Name="Output" Kind="OutputPin" />
                   <Pin Id="IWrM0JecokNPMhS3Ohuj3a" Name="Success" Kind="OutputPin" />
                 </Node>
+                <Node Bounds="2279,1694,50,19" Id="B64FzVGqTulPG1JNRowMD9">
+                  <p:NodeReference LastCategoryFullName="Main.MergeAlgo.Lookup" LastSymbolSource="MergeVLDocs.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Lookup" />
+                  </p:NodeReference>
+                  <Pin Id="THDtpnZjN81NQclSZvpAQa" Name="Input" Kind="InputPin" />
+                  <Pin Id="TzE5g28cyLuPSr02EAca1P" Name="Reference" Kind="InputPin" />
+                  <Pin Id="IqazK7UtlJUN4dudan4x7T" Name="Output" Kind="OutputPin" />
+                  <Pin Id="KUtfTDEJSAjMEZAdHWLOHh" Name="Success" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="2204,1729,37,19" Id="TveTnzLhdeLLsnuAA6tquy">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="NOT" />
+                  </p:NodeReference>
+                  <Pin Id="PNxTYgFd4OaMPHLjifKc08" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BlWBiKeZAitNmxVmJj0Zyy" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="2246,1767,37,19" Id="D4GSnCOZCbiLbL3UKME16L">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AND" />
+                  </p:NodeReference>
+                  <Pin Id="QF0CykrjpxwPhyTp1pHx7E" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MEEHJ1kMQxjO2DviG85kSB" Name="Input 2" Kind="InputPin" />
+                  <Pin Id="C27BVjzJMDUNAtJ8RxaHAt" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="2305,1729,37,19" Id="B5ni4WwtD3WMJFvPny8Uc8">
+                  <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="NOT" />
+                  </p:NodeReference>
+                  <Pin Id="PCkH8vRVmXdMjhjyaghuwP" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="J6rXevwC4JkPL7AF0yJwzX" Name="Output" Kind="StateOutputPin" />
+                </Node>
               </Patch>
             </Node>
             <ControlPoint Id="Swjz8Fv6IAqPN51OmUzDd9" Bounds="2042,2026" />
             <ControlPoint Id="B3BgOKmLI9XLypaz2PD3vx" Bounds="2069,2147" />
-            <Pad Id="H8a6NRQDlnzMEoaPoGfD36" Bounds="2322,1690,171,72" ShowValueBox="true" isIOBox="true" Value="take all from the branch that have a new Id or PropertyName ">
+            <Pad Id="H8a6NRQDlnzMEoaPoGfD36" Bounds="2380,1707,171,72" ShowValueBox="true" isIOBox="true" Value="take all from the branch that have a new Id or PropertyName ">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -7927,10 +7956,8 @@
             <Link Id="BWasaG7JwBdQGi2sVb851m" Ids="BH8iGFfeek4QJzvv1sxik1,PyCjkmw2G2HMdMjQJ26ZOs" IsHidden="true" />
             <Link Id="INDqDS0kOrHQDN5tPdaFaJ" Ids="Tc7YM3kgtI9MyDErw4uGtB,Swjz8Fv6IAqPN51OmUzDd9" IsHidden="true" />
             <Link Id="Fuq9Ld2LIGTMHFgeGF1dnW" Ids="B3BgOKmLI9XLypaz2PD3vx,TKIbrk14hajPUZWH2eCoqO" IsHidden="true" />
-            <Link Id="IG4GITlN3DqMnzkQv8DKia" Ids="DvHMGCrcYHkNOwVdbZgi6U,BH8iGFfeek4QJzvv1sxik1" />
             <Link Id="Kgi1eHvR4YKNmrCDiPhQDr" Ids="Rg651a2uPnpMLwgpmtVMhS,TuxP0jtf7WLLyncZrScm9J" />
             <Link Id="E42b1js9NQDMR4dPkjdao4" Ids="JO4U3N7ZLMzQL9ez4PvZHp,NCloJE9ynwPNozoxQPy504" />
-            <Link Id="Am0yy4isAUuOYtNxXCxd2n" Ids="IWrM0JecokNPMhS3Ohuj3a,IIZ8ChveUCZNycHRjUy3hR" />
             <Node Bounds="2067,2063,63,26" Id="EBM6lPCJBxpO2aXTfhFH89">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -8030,7 +8057,7 @@
             <Link Id="KliOPPvFXqVMZDsTNtwYWD" Ids="GJcs25zfFClP3ZK0wyB33v,I3mJCB7DK8nNep7lXe38vW" />
             <Link Id="G8hazjSFVXOOG7cHJbOm8s" Ids="FJQPW4ohF0kP47ekCE2xZO,Afzc0llvvWGProyc2kC0Rv" IsHidden="true" />
             <Link Id="AIhcfpLgCtJOZt9SdtY18k" Ids="SlAFuhxh63nMHDobN93jC3,RNeMkQHTeczNYrRs2eNa5D" IsHidden="true" />
-            <Pad Id="GPkl27SWXxAM3bNYShd0Mf" Bounds="2367,1880,156,19" ShowValueBox="true" isIOBox="true" Value="for when the item is new">
+            <Pad Id="GPkl27SWXxAM3bNYShd0Mf" Bounds="2391,1883,156,19" ShowValueBox="true" isIOBox="true" Value="for when the item is new">
               <p:TypeAnnotation>
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
@@ -8045,20 +8072,38 @@
             <Link Id="C33ytLS27Y9PsDJk7MKuFA" Ids="H6j06u9eQ7fNE1XA4Z2y6j,BsJvO29hTg0ND4NkdbVhsT" />
             <Link Id="PEjDWGjv5SIOdXquELYu5u" Ids="LkOPuIvYuu4LV2e3NURbvF,BSVMFtJdw6vNXimFJro6J5" />
             <Link Id="TvH0vyMI8FnLvG4xjBaoV9" Ids="LkOPuIvYuu4LV2e3NURbvF,UczxvB0eypkLmmDLJauu7J" />
-            <ControlPoint Id="FBmQiSRAY8NMDQAN2Dup67" Bounds="2175,1624" />
+            <ControlPoint Id="FBmQiSRAY8NMDQAN2Dup67" Bounds="2173,1623" />
             <Link Id="Dja3ruwre0OOQ8wrxtqPoG" Ids="EF9zogyfCrwNqPQI4BTiSC,FBmQiSRAY8NMDQAN2Dup67" IsHidden="true" />
             <Link Id="G3ZUWFtIoFCPus5KHBCqIl" Ids="FBmQiSRAY8NMDQAN2Dup67,El5Z1AbcVu4MgyMRiEt2Kw" />
+            <Pad Id="A7rjwgSylClPglKpNlbxol" Bounds="2373,1631,197,79" ShowValueBox="true" isIOBox="true" Value="new is what isn't present in the base and what isn't present in the reference branch">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:fontsize p:Type="Int32">9</p:fontsize>
+                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+              </p:ValueBoxSettings>
+            </Pad>
+            <ControlPoint Id="LfD2HUidZB1QMi9yPnJOP1" Bounds="2282,1623" />
+            <Link Id="GrNQPvlmgkVP9QCsh1Q766" Ids="IDJntzq9d0rNgORYjEwKwG,LfD2HUidZB1QMi9yPnJOP1" IsHidden="true" />
             <Pin Id="Tc7YM3kgtI9MyDErw4uGtB" Name="Merged" Kind="InputPin" Bounds="819,409" />
             <Pin Id="FJQPW4ohF0kP47ekCE2xZO" Name="Merged Items" Kind="InputPin" />
             <Pin Id="AE9LURGzNUXL07Szm3lCJM" Name="Branch" Kind="InputPin" />
-            <Pin Id="EF9zogyfCrwNqPQI4BTiSC" Name="Reference Branch" Kind="InputPin" />
             <Pin Id="QOPjt0IOPkKN1KElmlmG70" Name="Branch Id" Kind="InputPin" />
+            <Pin Id="EF9zogyfCrwNqPQI4BTiSC" Name="Reference Branch" Kind="InputPin" />
             <Pin Id="IDJntzq9d0rNgORYjEwKwG" Name="Base" Kind="InputPin" />
             <Pin Id="NCDsn4UHbtsQLMY5RtTXvL" Name="Local" Kind="InputPin" />
             <Pin Id="Nz3zy1GpqyFM9vlMXZHsw1" Name="Remote" Kind="InputPin" />
             <Pin Id="EK3GnvBMHbLNGaL2El0QLQ" Name="Parent" Kind="InputPin" Bounds="2478,1779" />
             <Pin Id="TKIbrk14hajPUZWH2eCoqO" Name="Merged" Kind="OutputPin" Bounds="736,860" />
             <Pin Id="RNeMkQHTeczNYrRs2eNa5D" Name="Merged Items" Kind="OutputPin" />
+            <Link Id="PIxpAdwGDCNMFIzG4bG31i" Ids="LfD2HUidZB1QMi9yPnJOP1,THDtpnZjN81NQclSZvpAQa" />
+            <Link Id="TQEH08W3k12PvUAfCXK2AY" Ids="JO4U3N7ZLMzQL9ez4PvZHp,TzE5g28cyLuPSr02EAca1P" />
+            <Link Id="PHflVqLYyQuPKjJbQxwzGU" Ids="IWrM0JecokNPMhS3Ohuj3a,PNxTYgFd4OaMPHLjifKc08" />
+            <Link Id="AYrcDmXWJFzMfIyeIAsT0r" Ids="KUtfTDEJSAjMEZAdHWLOHh,PCkH8vRVmXdMjhjyaghuwP" />
+            <Link Id="Bnb0bcres4HLCLwAQQh0zs" Ids="J6rXevwC4JkPL7AF0yJwzX,MEEHJ1kMQxjO2DviG85kSB" />
+            <Link Id="CKK4RIFuDt6PKOnFyAPyQr" Ids="BlWBiKeZAitNmxVmJj0Zyy,QF0CykrjpxwPhyTp1pHx7E" />
+            <Link Id="BHwGhtscA03NjWoWnZOor5" Ids="C27BVjzJMDUNAtJ8RxaHAt,BH8iGFfeek4QJzvv1sxik1" />
           </Patch>
         </Node>
         <Canvas Id="UN2p4QdgX8SP6OjNV7YnOv" Name="PickingReferenceBranch" Position="1493,976">
@@ -10632,6 +10677,15 @@
             </Node>
           </Patch>
         </Node>
+        <Pad Id="Gj3smpHCukUPMDminRVoKy" Bounds="2588,1607,180,202" ShowValueBox="true" isIOBox="true" Value="we don't want to add items that have been deleted on the reference branch and still are present in this branch. so we need to make sure that we only add items that also aren't present in the base branch. and thus really are new. not added yet AND new">
+          <p:TypeAnnotation>
+            <Choice Kind="TypeFlag" Name="String" />
+          </p:TypeAnnotation>
+          <p:ValueBoxSettings>
+            <p:fontsize p:Type="Int32">9</p:fontsize>
+            <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+          </p:ValueBoxSettings>
+        </Pad>
       </Canvas>
       <!--
 
@@ -14699,7 +14753,7 @@
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Renderer" />
               </p:NodeReference>
-              <Pin Id="MqR5pKLGZgjLdRLp9KBOyy" Name="Bounds" Kind="InputPin" DefaultValue="438, 269, 781, 656">
+              <Pin Id="MqR5pKLGZgjLdRLp9KBOyy" Name="Bounds" Kind="InputPin" DefaultValue="959, 7, 570, 656">
                 <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                   <Choice Kind="TypeFlag" Name="Rectangle" />
                 </p:TypeAnnotation>
