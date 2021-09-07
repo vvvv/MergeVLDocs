@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2020.1.3.147" Version="0.128">
-  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2020.1.3" />
+<Document xmlns:p="property" Id="ErWs1NOFlJvO9KMYlhsFwC" LanguageVersion="2021.4.0.362" Version="0.128">
+  <NugetDependency Id="TIbWoLxGm6jOrMZolRPVhJ" Location="VL.CoreLib" Version="2021.4.0-0362-g56b3b7d169" />
   <Patch Id="AmjjM5zvdLNOMqJb4g61Bo">
     <Canvas Id="BcQy1e5YEo7Nr0h0rPIsQZ" DefaultCategory="MergeUtils" CanvasType="FullCategory">
       <!--
@@ -648,7 +648,6 @@
           </Pad>
           <Link Id="BRac3gKx8vaOYCZ0oq79mQ" Ids="Tokpw2LcmAmP9Mfof6Zr5o,AnyiQTTVLD7LTBO0QqP7c8" />
           <ControlPoint Id="TkNN0ehCLmhLjWnt6ny7iw" Bounds="1314,506" />
-          <Pin Id="UFR1Mnclpm7QX4ilPQq5sQ" Name="Its our turn" Kind="OutputPin" Bounds="1134,420" />
           <Link Id="J2ASk1YvmeHQblj11DpG8n" Ids="TkNN0ehCLmhLjWnt6ny7iw,UFR1Mnclpm7QX4ilPQq5sQ" IsHidden="true" />
           <Node Bounds="1159,512,37,19" Id="VHETtPks3XWLRhDBlI5yXh">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
@@ -662,7 +661,7 @@
           <Link Id="JibeFkB7GqKMIBFo2DOfSm" Ids="B3j2PTcXNfnOK3D3pXjtnZ,TLGr42hYbLiMJjdDQJPnGU" />
           <Link Id="AeUCqDIhZuuMksbjpbwgjz" Ids="TLGr42hYbLiMJjdDQJPnGU,Q4KTWCQM89zP84bjFgu5Cj" />
           <Node Bounds="1159,541,188,138" Id="IP0MeEYnpilPrJ3EszYxfT">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -695,7 +694,6 @@
           <Link Id="OvyRONMrogiLaXIkP4JHOL" Ids="B3j2PTcXNfnOK3D3pXjtnZ,TkNN0ehCLmhLjWnt6ny7iw" />
           <Link Id="TzuXFx09aUTL3AWeGOsaAf" Ids="B3IhStXDaAkP9mvwea0n6o,U4UCBNJww9XLNBD0dUOq7e" />
           <ControlPoint Id="B3IhStXDaAkP9mvwea0n6o" Bounds="1388,587" />
-          <Pin Id="IdSXhEeGwGdQEOqMnWRKni" Name="Msg" Kind="InputPin" Bounds="955,260" />
           <Link Id="T2k2wxiHk1cOCIxINXmXwF" Ids="IdSXhEeGwGdQEOqMnWRKni,B3IhStXDaAkP9mvwea0n6o" IsHidden="true" />
           <Link Id="MJxIQKA1gPUOnB4sQ3y8Dw" Ids="C6XVwrtrw5lPLDeMxXAqhY,KydpwaSe4YsMyPtoWFjjEI" IsFeedback="true" />
           <Link Id="ETzDEJver2lQBMqmNnS4H5" Ids="GZYFnPraRHQQW6vt24dYri,C6XVwrtrw5lPLDeMxXAqhY" />
@@ -709,6 +707,8 @@
             </p:NodeReference>
             <Pin Id="RWihucaDcDOOXnpM7V3GSx" Name="Apply" Kind="InputPin" />
           </Node>
+          <Pin Id="UFR1Mnclpm7QX4ilPQq5sQ" Name="Its our turn" Kind="OutputPin" Bounds="1134,420" />
+          <Pin Id="IdSXhEeGwGdQEOqMnWRKni" Name="Msg" Kind="InputPin" Bounds="955,260" />
         </Patch>
       </Node>
       <Node Bounds="1150,240,295,120" Id="TGLrZEqj2LDLjmwSqJU9Ju">
@@ -794,7 +794,7 @@
             </Node>
             <Pad Id="BthOiJfZKKpOHttP0YHhWu" SlotId="EGAq0gRVnZ2PE9KLqeI4se" Bounds="372,306" />
             <Node Bounds="486,328,112,119" Id="OEoWjUh1ysvOfkZEN37AF9">
-              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
@@ -890,6 +890,24 @@
           <Pin Id="BoKuqvAMdbCLGebb5jR6Vk" Name="Result" Kind="OutputPin" />
         </Patch>
       </Node>
+      <!--
+
+    ************************ SystemVersion ************************
+
+-->
+      <Node Name="SystemVersion" Bounds="650,165" Id="DXpuvbsfJtdNrzN9CkI51z">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="System" LastSymbolSource="mscorlib.dll">
+          <Choice Kind="TypeFlag" Name="Version" />
+        </p:TypeAnnotation>
+        <Patch Id="E0PCwuCjea6LGXZ6aq6cE9">
+          <Canvas Id="PLqY9xdqJvjQQ0MYnV16CF" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="DzRlc5PYmdSM3wzDcGxFxN" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 
@@ -912,7 +930,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="NkEvyMrawyTPHnYfNXcWF4" Location="VL.Skia" Version="2021.4.0-0362-g56b3b7d169" />
   <PlatformDependency Id="IgvsUZKCGsdOqGzZwpzmQG" Location="mscorlib" />
   <PlatformDependency Id="QDR9KUE0GtwN1kTlkPpL9c" Location="System.Windows.Forms" />
   <PlatformDependency Id="JrjecpJBoeDMcM77y3BZkO" Location="../vvvv_Stride/public-vl/VL.CoreLib/src/bin/Release/net472/VL.Core.dll" />
