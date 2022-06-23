@@ -79,4 +79,4 @@ This configures our merge tool to be called regardless of the file type. The ide
 
 ### Merge Tests
 You can test the tool with your library or project VL docs, but that's not recommended for now.
-https://github.com/gregsn/MergeVLDocsExamples is here to exemplify merge problems and is here to test our tool.
+https://github.com/vvvv/MergeVLDocsExamples is here to exemplify merge problems and is here to test our tool.
