@@ -23,8 +23,8 @@ Let's distinguish different cases:
    * Dev A moved a bunch of definitions into a new *Category* or *Group*. Dev B changed one of those definitions. 
 
 First intuitions:
- * **different patches/canvases**: Easy to be merged. But ideas might still collide: *e.g. Dev A changed an interface and all its implementations. Dev B added an implementation of the old interface as known from *Base**
- * **same patch/canvas, different ends**: This should be mergeable. But it's not likely that the different ideas will merge semantically and the result will just run. 
+ * **different patches/canvases**: Easy to be merged - syntactically. Also semantically you often should be lucky and the different ideas combine without trouble. Sometimes however ideas might collide: *e.g. Anna changed an interface and all its implementations. Bob added an implementation of the old interface as known from Base.* So we can have red nodes even after a merge without any conflicts.
+ * **same patch/canvas, different ends**: This should also be mergeable without further ado. But it's not likely that the different ideas will merge semantically and the result will just run. 
  * **directly conflicting changes in the same patch/canvas**: We have a conflict where the user would need to pick one version or the other. These conflicts sound like real bad, but then again: often those are about details, like moved nodes here and there. Often it's sufficient to have a strategy that just picks one and doesn't drag you into a timeconsuming decision process. What you want however is a notification that there were direct conflicts that got resolved in the one other way.
  * **structural changes**: This is unmergeable for now since the only way to do those structural changes (via patch editor) is to copy and paste the definitions resulting in new GUID-Ids for all the elements. 
    *Note: this problem would go away if the document structure of VL files gets flattened (distinguish Canvas-Placement within another Canvas from the actual Canvas Definition, which should always be top-level)*
