@@ -14,20 +14,20 @@ Merging is about taking the difference
  * combine these in a certain way
 
 Let's distinguish different cases:
- * **directly conflicting changes**: E.g. 
+ * Changes were made on **different patches/canvases**
+ * Changes were made in the **same patch or the same canvas. But on different ends**
+ * **directly conflicting changes in the same patch/canvas**: E.g. 
    * a node was moved on *Local* and on *Remote*
    * The version of a dependency changed on *Local* and *Remote* ...
  * **structural changes**: E.g
    * Dev A moved a bunch of definitions into a new *Category* or *Group*. Dev B changed one of those definitions. 
- * Changes were made in the **same patch or the same canvas. But on different ends**
- * Changes were made on **different patches/canvases**
- 
-Wishful thinking:
- * **directly conflicting changes**: nah. can't merge. But maybe we can come up with something that doesn't feel so harsh. These changes sound like real bad conflicts, but then again: often your changes are not really about nodes that got moved...
+
+First intuitions:
+ * **different patches/canvases**: Easy to be merged. But ideas might still collide: *e.g. Dev A changed an interface and all its implementations. Dev B added an implementation of the old interface as known from *Base**
+ * **same patch/canvas, different ends**: This should be mergeable. But it's not likely that the different ideas will merge semantically and the result will just run. 
+ * **directly conflicting changes in the same patch/canvas**: We have a conflict where the user would need to pick one version or the other. These conflicts sound like real bad, but then again: often those are about details, like moved nodes here and there. Often it's sufficient to have a strategy that just picks one and doesn't drag you into a timeconsuming decision process. What you want however is a notification that there were direct conflicts that got resolved in the one other way.
  * **structural changes**: This is unmergeable for now since the only way to do those structural changes (via patch editor) is to copy and paste the definitions resulting in new GUID-Ids for all the elements. 
-   *Note: it would be so cool to solve that in the future*
- * **same patch/canvas, different ends**: This should be mergeable. But it's not likely that the different ideas will merge semantically and the result will just run.
- * **different patches/canvases**: Sounds easy to be merged. But ideas might still collide: Dev A changed an interface and all its implementations. Dev B added an implementation of the old interface as known from *Base*
+   *Note: this problem would go away if the document structure of VL files gets flattened (distinguish Canvas-Placement within another Canvas from the actual Canvas Definition, which should always be top-level)*
 
 ### First approach
 Let's build a small application that gets called by git merge. Let's access the different versions (*Base*, *Local*, *Remote*) in the same way that p4merge and other merge tools do: via command-line arguments.
@@ -41,7 +41,7 @@ So let's just work on an XElement and XAttribute level.
 * If one element got new child elements or attributes: take them
 * If the other one also added new child elements: take them too! *these should come with different GUIDs*
 * If some child elements or attributes got removed, then remove them (no matter if they got changed in the other version). Intuition for now: focus on the bold changes
-* If a certain attribute got changed in both versions: Choose remote. That's a kind move. Let the other dev win. In rare cases choose the *Base* value (e.g. "LanguageVersion" of the document). 
+* If a certain attribute got changed in both versions: Choose remote. Let the other dev win. In rare cases choose the *Base* value (e.g. "LanguageVersion" of the document). You get a warning and should check whether your patch still works. The idea behind remote: When opening the patches you will notice if something of your changes didn't make it. It's much harder to understand whether changes of somebody else made it through.
 
 There are many things to discuss and to test. But it's a start.
 It's obvious that this approach can mess up the patches as much as a line-based merge tool. But at least certain kinds of errors can't occur. 
