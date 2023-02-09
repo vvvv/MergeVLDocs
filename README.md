@@ -59,7 +59,7 @@ After merging:
 ### Setup
 For now, it is manual.
 
-* [Download the latest release v2.01](https://github.com/gregsn/MergeVLDocs/files/7129192/MergeVLDocs.zip)
+* [Download the latest release](https://github.com/vvvv/MergeVLDocs/releases)
 * Unzip, make sure the name containing the exe is called just `MergeVLDocs` and move that folder under `C:\Program Files` or whereever you want it
 * Go to your windows user folder (typically `C:\Users\__MEMEMEME__`) and edit the .gitconfig file. Consider making a copy of the original file before changing it.
 ```
